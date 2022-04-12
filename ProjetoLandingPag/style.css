@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*seletor= é o local onde vamos estilizar por exemplo o body/header as divs criadas */
+body {
+    /*Propriedade= oque vai ser estilizado no seletor por exemplo o fundo, a fonte e etc ... :valor: especificação que é qual será a estilização feita na propriedade ex: red, 22px */
+    background-color: rgb(187, 72, 233);
+}
+
+header {
+    max-width: 1340px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+    border: 1px dashed white;
+    /*flexbox:*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.navMenu {
+    width: 500px;
+    height: 70px;
+}
+
+.navMenu ul {
+    display: flex;
+}
+
+.navMenu li {
+    width: 100px;
+    height: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navMenu a{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navMenu li:hover {
+    background-color: rgba(255, 255, 255, 0.842);
+    transition: all 0.1s;
+    color:rgb(187, 72, 233); 
+}
+
+.navMenu a:hover{
+    color:rgb(187, 72, 233);
+}
+
+
+main {
+    width: 1340px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.boxSectionLeft {
+    width: 500px;
+    height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    text-align:left;
+    line-height: 40px;
+}
+
+.boxSectionLeft h1 {
+    margin-top: 50px;
+}
+
+.boxSectionRight {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #fff;
+    display: flex;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(0, 26, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerCircle {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: rgb(187, 72, 233);
+}
+
+
+footer {
+    width: 1340px;
+    height: 60px;
+    background-color: rgb(246, 142, 255);
+    margin: 0 auto;
+}
