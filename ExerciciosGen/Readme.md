@@ -1,10 +1,10 @@
-👍🏽✔🟢concluído
-<!--👉🏽🛠⚠ em contrução
+👉🏽🛠⚠ em construção
+<!--👉🏽🛠⚠ em construção
 ✋🏽❌⛔parado
 👍🏽✔🟢concluído-->
-# PROJETO APRENDENDO HTML E CSS
+# EXERCÍCIOS GENERATION
 
-Nos projetos incluidos neste repositório realizo exercícios e pequenos projetos para praticar HTML e CSS.
+Nestes exercícios treino alguns comandos em HTML e CSS propostos pela Generation.
 
 ## 🚀 Começando
 
@@ -20,11 +20,11 @@ Sinta-se a vontade em colaborar com meu projeto.
 
 ## 📌 Versão
 
-Versão 1.0;
+Versão 1.0-08/04/2022;
 
 ## 🎁 Expressões de gratidão
 
-* Obrigada @Generation e prof. @Yuri📢🤓.
+* Obrigada @Alura @GustavoGuanabara @Desenvolve22 @Inkasadev📢🤓.
 
 ---
 🤝🏽inspirado no readme do @lohhans
