@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!--puxando css externo-usual-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <!--css interno- não é usual -->
+    <style>
+        /*a estrutura do css é  composta por seletor:propriedade e valor*/
+        /*# é como configuro o estilo de um ID*/
+        #titulo{
+           /*cor da letra*/
+            color:palevioletred; 
+            /*alinhar texto no centro*/
+            text-align:center;
+        }
+    </style>
+
+    <title>Sobre</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">home</a></li>
+                <li><a href="contato.html">contato</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="T47.html">T47</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <h1 #titulo>Sejam Bem Vindos a minha Página!</h1>
+        <!--abaixo eu estou usando um css inline que não é usual mais tem força maior pois se sobreescreve os demais css o interno e o externo -->
+        <h2 style="color:pink;text-align: left">Eu sou a Danyelle e vou falar sobre filmes e séries</h2>
+        
+        <p> Aqui você verá os melhores filmes e séries que eu já assisti.</p>
+        
+        <div class="container">
+            <p class ="containerParagrafo">Filme preferido da Semana é Cisne Negro , porque é o meu filme preferido da vida e é sobre isso e tá tudo bem!</p>
+            <div class="containerImagem">
+                <img src="assets/cisnenegroposter.jpg" alt="Poster Cisne Negro">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul class="container">
+                <a href="https://www.linkedin.com/in/danyelleac/">
+                    <img class="redeSociais" src="assets/linkedin.png" alt="logo linkedIn">
+                </a>
+                <a href="https://github.com/Danyelleac">
+                    <img class="redeSociais"src="assets/github.png" alt="logo github">
+                </a>
+            </ul>
+        </div> 
+    </footer>
+
+</body>
+</html>

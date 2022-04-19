@@ -1,0 +1,20 @@
+
+p {
+    /*alinhando texto no centro*/
+    text-align: center;
+    /*tamanho da fonte*/
+    font: 20px bold;
+    
+}
+
+
+.containerImagem{
+    margin:20px;/* margem com 20 px em cada lado*/
+    border: 5px solid rgb(229, 175, 203);/*borda com 5px solida e da cor rosa*/
+    padding: 20px;/*espaçamento interno 20px em casda lado*/
+
+}
+.containerParagrafo{
+    margin:50px;/* margem com 20 px em cada lado*/
+    padding: 50px;/*espaçamento interno 20px em casda lado*/
+}
