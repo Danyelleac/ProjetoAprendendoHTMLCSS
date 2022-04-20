@@ -1,0 +1,42 @@
+/* estilização por tag*/
+/*estilizando o body de todas as paginas*/
+body{
+    background-color: black;
+    color: white;
+}
+
+
+main{
+    background-color: rgb(18, 18, 18);
+}
+
+/*estilizando o menu de todas as paginas*/
+.menu li{
+    display: inline;
+    padding: 30px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    color: pink;
+    font-weight: bold;
+}
+
+/*etilização por classe*/
+.container{
+    display:flex;/*deixar os itens em container um ao lado do outro*/
+    justify-content: center;/* centralizar no eixo horizontal*/
+    align-items: center;/*alinhar no eixo vertical*/
+}
+
+/*estilização dos logos das redes sociais*/
+.redeSociais{
+    width: 50px;
+    width: 50px;
+    padding: 20px;
+}

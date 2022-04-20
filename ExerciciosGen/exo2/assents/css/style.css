@@ -1,0 +1,212 @@
+/*Variaveis cores*/
+:root{
+    --backgroundMain: #010101;
+    --fontTitleAndBorder: #d87093;
+    --fontsubtitle: #ffc0cb;
+    --fontext: #f6f5f5;
+    --fontfamily : 'Montserrat', sans-serif;  
+    --houver: #eadadd;
+    --click: #a63548;
+}
+
+/*General*/
+
+body{
+    font-family: var(--fontfamily);
+    background-color: var(--backgroundMain);  
+    color: var(--fontext);
+}
+
+.container{
+    padding-right : 6%;
+    padding-left : 6%;
+}
+/*Header*/
+header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    border-bottom: 1px solid var(--fontTitleAndBorder);
+}
+
+.logo {
+    margin-bottom: 1rem;
+    width: 260px;
+    height: 260px;
+}
+
+.navMenu {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.navMenu a{
+    font-size: 1.1rem;
+
+    display: inline-block;
+
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+}
+
+/*About*/
+.about {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.aboutTxTandImg{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.aboutTitle {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+.aboutText {
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.aboutImage{
+    width: 150vw;
+    height: 100vh;
+    
+}
+
+
+
+/*Contact*/
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactTitle {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 1.25rem;
+}
+
+
+.buttonContact{
+
+    color: var(--fontTitleAndBorder);
+
+    border-color: var(--fontTitleAndBorder);
+
+    margin-top: 1rem;
+
+    text-align : center;
+    
+    display : block;
+
+    width: 100%;
+    max-width : 350px;
+
+    box-sizing: border-box;
+    padding : 1rem 2rem;
+    border: 1px solid var(--branco);
+    border-radius:5px;
+
+}
+
+/*Footer*/
+footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--bg-rodape);
+
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.socialMedia {
+    display: flex;
+}
+
+
+.socialMedia a{
+     margin: 0 .5rem .7rem;
+}
+
+
+
+/**/
+@media screen and(min-width:1024px) {
+    .cabecalho{
+        flex-direction:row;
+        justify-content: space-between;
+
+        border:none;
+        
+    }
+
+    .sobre {
+        display:flex;        
+    }
+
+    .sobreConteudo {
+        margin-right: 3rem;        
+    }
+
+    .sobreTitulo {
+        text-align: left;
+
+    }
+
+    .sobreTextoDivisão {
+        border-bottom: 1px solid var(--cinza-medio);
+        padding-bottom:1.5rem;
+
+    }
+
+    .sobreImagem{
+        display: block;
+    }
+
+    .rodape {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .rodapeNavegacao {
+        text-align: left;
+        min-width: 600px;
+    }
+}
+
+
