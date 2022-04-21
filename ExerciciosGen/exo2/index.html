@@ -16,9 +16,15 @@
         <img class="logo" src="assents/img/logo.png" alt="logo DanyelleAC">
         <nav class="navMenu">
             <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Fale Comigo</a></li>
-                <li><a href="#socialMedia">Redes Sociais</a></li>
+                <li>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contact">Fale Comigo</a>
+                </li>
+                <li>
+                    <a href="#socialMedia">Redes Sociais</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -26,9 +32,9 @@
         <section class="about" id="about">
             <h1 class="aboutTitle">Sobre</h1>
             <div class="aboutTxTandImg">
-            <p class="aboutText">Olá sou a Danyelle mas todo mundo me chama de Dany, moro na zona Leste de São Paulo capital, porém eu gosto de estar em meio a natureza, eu amo viajar , conhecer lugares novos, culturas e pessoas, sou apaixonada pela natureza , me aventuro em trilhas e como filha de Oxum amo nadar em lindas cachoeiras por este Brasilzão!
-            <br>Bora fazer uma trilha Juntes? </p>
-            <img class="aboutImage" src="assents/img/danyviagem.jpg" alt="Foto da Danyelle sorrindo em uma cachoeira">
+                <p class="aboutText">Olá sou a Danyelle mas todo mundo me chama de Dany, moro na zona Leste de São Paulo capital, porém eu gosto de estar em meio a natureza, eu amo viajar , conhecer lugares novos, culturas e pessoas, sou apaixonada pela natureza , me aventuro em trilhas e como filha de Oxum amo nadar em lindas cachoeiras por este Brasilzão!
+                <br>Bora fazer uma trilha Juntes? </p>
+                <img class="aboutImage" src="assents/img/danyviagem.jpg" alt="Foto da Danyelle sorrindo em uma cachoeira">
             </div>
         </section>
         <section class="contact" id="contact">
@@ -40,15 +46,15 @@
                         <h3 class="contactSubtitle">Formulário de Contato</h3>
                         <form>
                             <label for="name">Nome: </label>
-                            <input type="text" id="name">
+                            <input type="text" id="name" class="input-padrao" placeholder="Digite seu nome e sobrenone" required>
                             
                             <label for="email">E-mail: </label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@exemplo.com">
                             
                             <label for="subject">Assunto: </label>
-                            <textarea name="subject" id="subject" cols="60" rows="5" ></textarea>
+                            <textarea name="subject" id="subject" cols="60" rows="5" class="input-padrao" required></textarea>
                             
-                            <button class="buttonContact">Enviar Formulário</button>
+                            <button class="buttonContact" onclick="validar()">Enviar Formulário</button>
                         </form>
                     </div>
                     <div class="location">
