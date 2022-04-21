@@ -15,6 +15,7 @@ body{
     font-family: var(--fontfamily);
     background-color: var(--backgroundMain);  
     color: var(--fontext);
+    font-size: 18px;
 }
 
 .container{
@@ -22,72 +23,83 @@ body{
     padding-left : 6%;
 }
 /*Header*/
-header {
-    width: 100%;
-
+.top {
+    
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+   
 
     padding-top: .75rem;
     padding-bottom: .75rem;
 
-    border-bottom: 1px solid var(--fontTitleAndBorder);
+
+    /*border-bottom: 1px solid var(--fontTitleAndBorder);*/
 }
 
 .logo {
-    margin-bottom: 1rem;
     width: 260px;
     height: 260px;
 }
 
 .navMenu {
+    width:400px;
+}
+
+.navMenu ul {
     text-align: right;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--fontTitleAndBorder);
+    
 }
 
-.navMenu a{
-    font-size: 1.1rem;
-
-    display: inline-block;
-
-    margin-right: .7rem;
-    margin-bottom: 1.25rem;
-    margin-left: .7rem;
+.navMenu a:hover {
+    color: var(--houver);
 }
 
 /*About*/
 .about {
+    
     padding-top: 3rem;
     padding-bottom: 3rem;
+    border-top: 1px solid var(--houver);
+    border-bottom: 1px solid var(--houver);
+}
+
+.aboutTitle {
+    color: var(--fontTitleAndBorder);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--fontfamily);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .aboutTxTandImg{
     display: flex;
     flex-direction: row;
-
-}
-
-.aboutTitle {
-    color: var(--cinza-escuro);
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: var(--montserrat);
-    text-transform: uppercase;
-    text-align: center;
-
-    margin-bottom: 1.25rem;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .aboutText {
-    line-height: normal;
-    margin-bottom: 1rem;
+    margin: 0 5rem;
+    line-height: 2rem;
+    font-size: 20px;
 }
 
 .aboutImage{
-    width: 150vw;
-    height: 100vh;
+    
+    width: 500px;
+    height: 500px;
+    margin: 0 5rem ;
     
 }
 
@@ -95,20 +107,8 @@ header {
 
 /*Contact*/
 
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 .contactTitle {
-    color: var(--cinza-escuro);
+    color: var(--fontTitleAndBorder);
     font-weight: 700;
     font-size: 1.5rem;
     font-family: var(--montserrat);
@@ -118,43 +118,90 @@ header {
     margin-bottom: 1.25rem;
 }
 
+.contact p{
+    line-height: 1.5rem;
+}
+
+.contact {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactBox{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 50px;
+    
+}
+
+.contactForm label{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    
+}
+
+.contactSubtitle{
+    color: var(--fontsubtitle);
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.location{
+    margin-left: 50px;
+
+}
+
+.location iframe{
+    padding-top: 1rem;
+}
 
 .buttonContact{
 
-    color: var(--fontTitleAndBorder);
-
-    border-color: var(--fontTitleAndBorder);
+    color: var(--fontext);
+    font-weight: bold;
+    background-color: var(--fontTitleAndBorder);
 
     margin-top: 1rem;
-
     text-align : center;
-    
-    display : block;
-
+      
     width: 100%;
     max-width : 350px;
 
     box-sizing: border-box;
     padding : 1rem 2rem;
-    border: 1px solid var(--branco);
     border-radius:5px;
+
 
 }
 
 /*Footer*/
-footer ul{
+
+.socialMedia ul{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    background-color: var(--bg-rodape);
-
-    padding-top: 2.5rem;
-    padding-bottom: 2rem;
 }
 
 .socialMedia {
+    
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -162,51 +209,16 @@ footer ul{
      margin: 0 .5rem .7rem;
 }
 
-
-
-/**/
-@media screen and(min-width:1024px) {
-    .cabecalho{
-        flex-direction:row;
-        justify-content: space-between;
-
-        border:none;
-        
-    }
-
-    .sobre {
-        display:flex;        
-    }
-
-    .sobreConteudo {
-        margin-right: 3rem;        
-    }
-
-    .sobreTitulo {
-        text-align: left;
-
-    }
-
-    .sobreTextoDivisão {
-        border-bottom: 1px solid var(--cinza-medio);
-        padding-bottom:1.5rem;
-
-    }
-
-    .sobreImagem{
-        display: block;
-    }
-
-    .rodape {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .rodapeNavegacao {
-        text-align: left;
-        min-width: 600px;
-    }
+.socialMedia img{
+    width: 80px;
+    
 }
+
+footer p{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
